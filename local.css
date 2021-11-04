@@ -1,0 +1,8 @@
+:root {
+  --r-main-font-size: 28px;
+}
+
+.reveal ul {
+  margin-bottom: 2em;
+  min-width: 80%;
+}
