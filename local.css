@@ -42,3 +42,25 @@
   min-width: 80%;
   padding: 5px 4%;
 }
+
+kbd {
+  background-color: #f7f7f7;
+  border-radius: 0.25rem;
+  border: 1px solid #cbcccd;
+  box-shadow: 0 2px 0 1px #cbcccd;
+  cursor: default;
+  display: inline-block;
+  font-size: 0.75em;
+  line-height: 1;
+  min-width: 0.75rem;
+  padding: 2px 5px;
+  position: relative;
+  text-align: center;
+  transform: translateY(-2px);
+  transition: transform 50ms ease;
+}
+
+kbd:hover {
+  box-shadow: 0 1px 0 0.5px #cbcccd;
+  transform: translateY(0px);
+}
