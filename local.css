@@ -1,8 +1,44 @@
 :root {
-  --r-main-font-size: 28px;
+  --r-main-font-size: 24px;
+}
+
+.reveal h3,
+.reveal h4 {
+  text-align: left;
+  margin-top: -4em;
+}
+
+.reveal p {
+  text-align: left;
+  line-height: 1.4em;
 }
 
 .reveal ul {
-  margin-bottom: 2em;
+  min-width: 100%;
+}
+
+.reveal li {
+  margin-top: 0.25em;
+  text-shadow: 2px 2px 0px white;
+}
+
+.reveal li code {
+  line-height: 1em;
+}
+
+.reveal li:last-child {
+  margin-bottom: 1em;
+}
+
+.reveal ul p {
+  margin: 0;
+}
+
+.reveal ul ul {
+  font-size: 0.8em;
+}
+
+.reveal blockquote {
   min-width: 80%;
+  padding: 5px 4%;
 }
