@@ -2,6 +2,14 @@
   --r-main-font-size: 24px;
 }
 
+.reveal section {
+  text-shadow: 2px 2px 0px white;
+}
+
+.reveal code {
+  text-shadow: none;
+}
+
 .reveal h3,
 .reveal h4 {
   text-align: left;
@@ -19,7 +27,6 @@
 
 .reveal li {
   margin-top: 0.25em;
-  text-shadow: 2px 2px 0px white;
 }
 
 .reveal li code {
