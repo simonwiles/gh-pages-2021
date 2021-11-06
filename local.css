@@ -54,7 +54,7 @@
   padding: 5px 4%;
 }
 
-.reveal section a::after {
+.reveal section a:not([href^="mailto"])::after {
   background-color: var(--r-link-color);
   content: "";
   display: inline-block;
