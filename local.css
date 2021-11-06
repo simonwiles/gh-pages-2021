@@ -2,6 +2,10 @@
   --r-main-font-size: 24px;
 }
 
+.reveal img {
+  margin: 0;
+}
+
 .reveal section {
   text-shadow: 2px 2px 0px white;
 }
