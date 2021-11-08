@@ -98,3 +98,7 @@ kbd:hover {
   box-shadow: 0 1px 0 0.5px #cbcccd;
   transform: translateY(0px);
 }
+
+p.notes {
+  font-size: 0.75em;
+}
