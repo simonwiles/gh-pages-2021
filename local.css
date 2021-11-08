@@ -1,5 +1,6 @@
 :root {
   --r-main-font-size: 24px;
+  --r-heading-text-transform: none;
 }
 
 .reveal img {
