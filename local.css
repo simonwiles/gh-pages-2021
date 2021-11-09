@@ -16,6 +16,21 @@
   text-shadow: none;
 }
 
+.reveal li code,
+.reveal p code {
+  background: gainsboro;
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 0.9em;
+  line-height: 0.9em;
+  padding: 6px 4px 0;
+  transform: translateY(-1px);
+}
+
+.reveal li code {
+  transform: translateY(-2px);
+}
+
 .reveal h3,
 .reveal h4 {
   text-align: left;
@@ -76,6 +91,12 @@
 
 .reveal section a:hover::after {
   background-color: var(--r-link-color-hover);
+}
+
+.reveal pre[data-id="code-animation"] {
+  overflow: hidden;
+  font-size: 0.8em;
+  line-height: 1.1;
 }
 
 kbd {
