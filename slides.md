@@ -67,9 +67,14 @@ When you've submitted the sign-in form, please keep the browser tab open on the 
   - Behaviour Layer  
     (ECMAScript, more commonly known as JavaScript)
   - Other resources (images, media etc., potentially data)
+
+<!-- .element class="fragment" -->
+
 - "Static" by nature
   - Clients (web browsers) download the resources  
     and render the page on the user's computer
+
+ <!-- .element class="fragment" -->
 
 ---
 
@@ -82,12 +87,19 @@ When you've submitted the sign-in form, please keep the browser tab open on the 
   - Can be updated in real time, while running
   - Examples include CMSs such as WordPress, Drupal, MediaWiki
 
+ <!-- .element class="fragment" -->
+
 - **Static Sites**
 
   - Resources are created in advance of user requests and are delivered to users exactly as stored
   - Updates require that some or all of the pages are modified/replaced/recreated
   - No special server-side software required
   - Resources can be created by a Static-Site Generator
+
+ <!-- .element class="fragment" -->
+
+- "Static" ≠ non-interactive!
+<!-- .element class="fragment" -->
 
 :::
 Dynamic sites involve running a some software (PHP, Python, Ruby etc.) on a server somewhere
@@ -199,6 +211,14 @@ say something about widgets?
   </div>
   <a href="https://xkcd.com/1597/" title="XKCD - Git" target="xkcd" class="fragment"><img src="//imgs.xkcd.com/comics/git.png" title="If that doesn't fix it, git.txt contains the phone number of a friend of mine who understands git. Just wait through a few minutes of 'It's really pretty simple, just think of branches as...' and eventually you'll learn the commands that will fix everything." alt="Git" srcset="//imgs.xkcd.com/comics/git_2x.png 2x"></a>
 </div>
+
+:::
+At the start of 2020:
+
+- 2.8 million l-o-c
+- ~900,000 commits
+- > 27,000 contributors
+
 ---
 
 <!-- .slide: data-background-image="assets/git.png" -->
@@ -214,8 +234,8 @@ say something about widgets?
   - Repositories can be (are) distributed -- meaning that multiple copies can exist in multiple locations
 
 - **Commits**
-  - A collection of content representing the state of the repo at a given point
-  - Are annotated with commit messages, which typically (should) describe the changes represented by the commit
+  - A commit is a collection of content representing the state of the repo at a given point
+  - Commits are annotated with commit messages, which typically (should) describe the changes represented by the commit
 
 <p class="notes">Note: This is heavily simplified and omits several important concepts needed to use git effectively on your local computer.</p>
 
@@ -248,23 +268,36 @@ This is some notes.
 
 ### GitHub Pages
 
-- Offers free static web hosting for public repositories
-- Provides addresses of the form `<gh-user>.github.io/repo`
-  - but can use custom domain names purchased and registered elsewhere
+- Offers free static web hosting for public GitHub repositories
+  - Can serve HTML and related files directly from a repository, but can also integrate  
+    SSGs to build sites from **content** in a repository
+- Provides addresses of the form `<gh-user>.github.io/<repo-name>`
+  - Can use custom domain names purchased and registered elsewhere
 - Automatically creates free TLS (https) encryption certificates
 
 ---
 
+<!-- .slide: data-background-image="assets/github-pages.png" -->
+<!-- .slide: data-background-size="100vmin" -->
+<!-- .slide: data-background-position="bottom" -->
+<!-- .slide: data-background-opacity="0.2" -->
+
 ### Limits and Limitations of GitHub Pages
 
 - Static sites only!
+
+<!-- .element class="fragment" -->
 
 - Maximum file size: 100 MB
 - Maximum site size: 1 GB
 - Bandwidth limit: 100 GB / month (soft limit)
 - Build limit: **<mark>10 builds / hour</mark>** (soft limit)
 
+<!-- .element class="fragment" -->
+
 - Public sites and repositories only (on free plans)
+
+<!-- .element class="fragment" -->
 
 ---
 
@@ -276,36 +309,86 @@ This is some notes.
   - Complete the email verification process
   - "Skip Personalization" for now
 
-- Let's complete the `README.md` repo
+- Complete the `README.md` repo
+  - If you already had a GitHub account, create the repo `<gh-user>/<gh-user>`,  
+    and create a `README.md` file
+  - Edit the text a little, and make your first commit!
+  - `<gh-user>/<gh-user>` is a special repo -- the contents of `README.md` will  
+    appear on your GitHub profile page
 
 ---
 
-### Let's create some websites!
+# Let's create some websites!
 
 ---
 
 ### Create a Repository
 
 - Create a new repository with the name `<gh-user>.github.io`
-  - if you already have a repo with this name, create a new repo with whatever name you like, but be ready to make changes later on
+
+  - If you already have a repo with this name, create a new repo with whatever name you like, but be ready to make changes later on
+  - Select "Add a README file" -- this will make it easier to get started
+
+- Create a new file (<kbd>Add File</kbd> → <kbd>Create new file</kbd>) called `index.html`
+
+  - Add some obligatory "Hello World!" text
+
+- Navigate to <kbd>Settings</kbd> and then <kbd>Pages</kbd>, and see that your site is published
+
+- Visit `https://<gh-user>.github.io/` and see that your site is live!
 
 ---
+
+<!-- .slide: data-auto-animate -->
 
 ### The Simplest Possible Web Page
 
 Copy-and-paste this simplest possible HTML document over the top of the `index.html` in your repo, and change the text. Commit the new version, and wait for GH-Pages to deploy your new page.
 
-```html [1|2-4|5-8|9|1-9]
-<html>
-  <head>
-    <title>Your title here...</title>
-  </head>
+<pre data-id="code-animation">
+  <code data-trim data-line-numbers="1|3-5|6-9|11|1-11">
+    <script type="text/template">
+      <html>
 
-  <body>
-    Your content here...
-  </body>
-</html>
-```
+        <head>
+          <title>Your title here...</title>
+        </head>
+
+        <body>
+          Your content here...
+        </body>
+      
+      </html>
+    </script>
+  </code>
+</pre>
+
+---
+
+<!-- .slide: data-auto-animate -->
+
+### The Simplest Possible Web Page
+
+Copy-and-paste this simplest possible HTML document over the top of the `index.html` in your repo, and change the text. Commit the new version, and wait for GH-Pages to deploy your new page.
+
+<pre data-id="code-animation">
+  <code data-trim data-line-numbers>
+    <script type="text/template">
+      <html>
+        
+        <head>
+          <title>Your title here...</title>
+        </head>
+
+        <body>
+          <h1>Welcome to my page</h1> <!-- try adding a header, too! -->
+          Your content here...
+        </body>
+      
+      </html>
+    </script>
+  </code>
+</pre>
 
 ---
 
@@ -313,25 +396,47 @@ Copy-and-paste this simplest possible HTML document over the top of the `index.h
 
 Let's create a more interesting example.
 
-- Open the example page and take a quick look
-  - https://simonwiles.github.io/gh-pages-2021/templates/one-file.html <!-- .element: target="one-file" -->
-- Use <kbd>Ctrl</kbd> + <kbd>U</kbd> / <kbd>⌘</kbd> + <kbd>U</kbd> to "View Source" and take a look at the HTML
+- Open the example page and take a quick look  
+  https://sul-cidr.github.io/gh-pages-2021/templates/one-file.html <!-- .element: target="one-file" -->
+
+<!-- .element class="fragment" -->
+
+- Use <kbd>Ctrl</kbd> + <kbd>U</kbd> or <kbd>⌘</kbd> + <kbd>U</kbd> to "View Source" and take a look at the HTML
 - Copy-and-paste the entire contents over the top of your `index.html` in your repository
+- Commit, and wait for the deploy
+
+<!-- .element class="fragment" -->
+
+---
+
+### Using dev. tools
+
+- Hit <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> or <kbd>⌘</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd>
+- Use the "Elements" tab (Chromium-based browsers) or the "Inspector" tab (Firefox) to take a look at the page
+- Change a few things!
 
 ---
 
 ### A One-Page Résumé Site
 
-- Check out the example
-  - https://simonwiles.github.io/gh-pages-2021/templates/one-page-resume/ <!-- .element: target="one-page-resume" -->
-- Copy the page again, as before
+- Check out the example  
+  https://sul-cidr.github.io/gh-pages-2021/templates/one-page-resume/ <!-- .element: target="one-page-resume" -->
+- Copy the page again, as before, but notice that the styles and the image are missing
+
+<!-- .element class="fragment" -->
+
+- Grab a zip of the whole page from:  
+  https://sul-cidr.github.io/gh-pages-2021/templates/one-page-resume/one-page-resume.zip
+- Extract the files to your computer somewhere, then upload them to your GitHub repo using <kbd>Add File</kbd> → <kbd>Upload files</kbd>
+
+<!-- .element class="fragment" -->
 
 ---
 
-### Some editing tricks
+### Editing with VS Code
 
 - github.dev
-- Browser dev tools
+- https://code.visualstudio.com/
 
 ---
 
