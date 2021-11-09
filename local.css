@@ -103,3 +103,7 @@ kbd:hover {
 p.notes {
   font-size: 0.75em;
 }
+
+img.logo-heading {
+  width: 50%;
+}
