@@ -6,20 +6,20 @@
 
 ---
 
-> This workshop will introduce you to using the free GitHub Pages service to host website and web pages online.
->
-> We will take you through creating a GitHub account and a GitHub Pages site, and then show you how to create simple but useful web pages you can use to create an online presence for yourself or for a project or team.
->
-> No prior experience is assumed or expected, and no special tools or software is required.
-
----
-
 ### Before we begin...
 
 Please sign in for this workshop at:  
 https://signin.cidr.link/Websites_with_GitHub_Pages/ <!-- .element: target="signin" -->
 
 When you've submitted the sign-in form, please keep the browser tab open on the evaluation form as a reminder to complete it when the workshop is over.
+
+---
+
+> This workshop will introduce you to using the free GitHub Pages service to host website and web pages online.
+>
+> We will take you through creating a GitHub account and a GitHub Pages site, and then show you how to create simple but useful web pages you can use to create an online presence for yourself or for a project or team.
+>
+> No prior experience is assumed or expected, and no special tools or software is required.
 
 ---
 
