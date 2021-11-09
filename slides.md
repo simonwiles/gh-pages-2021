@@ -1,6 +1,6 @@
 # Personal & Professional Websites w/ GitHub Pages
 
-## ![CIDR](/assets/cidr.400x209.png)
+## ![CIDR](assets/cidr.400x209.png)
 
 ## https://sul-cidr.github.io/gh-pages-2021/
 
@@ -54,7 +54,7 @@ When you've submitted the sign-in form, please keep the browser tab open on the 
 
 ---
 
-<!-- .slide: data-background-image="/assets/html-css-javascript.png" -->
+<!-- .slide: data-background-image="assets/html-css-javascript.png" -->
 <!-- .slide: data-background-size="100vmin" -->
 <!-- .slide: data-background-position="right" -->
 <!-- .slide: data-background-opacity="0.2" -->
@@ -174,15 +174,15 @@ say something about widgets?
 
 ---
 
-## ![git](/assets/git.png) <!-- .element class="logo-heading" -->
+## ![git](assets/git.png) <!-- .element class="logo-heading" -->
 
-## ![GitHub](/assets/github.png) <!-- .element class="logo-heading" -->
+## ![GitHub](assets/github.png) <!-- .element class="logo-heading" -->
 
-## ![GitHub](/assets/github-pages.png) <!-- .element class="logo-heading" -->
+## ![GitHub](assets/github-pages.png) <!-- .element class="logo-heading" -->
 
 ---
 
-<!-- .slide: data-background-image="/assets/git.png" -->
+<!-- .slide: data-background-image="assets/git.png" -->
 <!-- .slide: data-background-size="100vmin" -->
 <!-- .slide: data-background-position="bottom" -->
 <!-- .slide: data-background-opacity="0.2" -->
@@ -201,7 +201,7 @@ say something about widgets?
 </div>
 ---
 
-<!-- .slide: data-background-image="/assets/git.png" -->
+<!-- .slide: data-background-image="assets/git.png" -->
 <!-- .slide: data-background-size="100vmin" -->
 <!-- .slide: data-background-position="bottom" -->
 <!-- .slide: data-background-opacity="0.2" -->
@@ -224,7 +224,7 @@ This is some notes.
 
 ---
 
-<!-- .slide: data-background-image="/assets/github.png" -->
+<!-- .slide: data-background-image="assets/github.png" -->
 <!-- .slide: data-background-size="100vmin" -->
 <!-- .slide: data-background-position="bottom" -->
 <!-- .slide: data-background-opacity="0.2" -->
@@ -241,7 +241,7 @@ This is some notes.
 
 ---
 
-<!-- .slide: data-background-image="/assets/github-pages.png" -->
+<!-- .slide: data-background-image="assets/github-pages.png" -->
 <!-- .slide: data-background-size="100vmin" -->
 <!-- .slide: data-background-position="bottom" -->
 <!-- .slide: data-background-opacity="0.2" -->
