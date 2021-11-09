@@ -433,46 +433,182 @@ Let's create a more interesting example.
 
 ---
 
-### Editing with VS Code
+### Editing with VS Code Web
 
-- github.dev
-- https://code.visualstudio.com/
+- From your repo page on github.com, press the <kbd>.</kbd> key
+  - The URL is the repo URL with `github.dev` in place of `github.com`
+
+<!-- .element class="fragment" -->
+
+- Change some text in the `index.html` file, and one or more of the colours in `style.css`, then use the <kbd>Source Control</kbd> panel to create a commit.
+
+<!-- .element class="fragment" -->
+
+- Desktop application (free and [mostly] open-source) can be downloaded from:  
+  https://code.visualstudio.com/
+
+<!-- .element class="fragment" -->
 
 ---
 
-### Markdown and Static Site Generators
+### GitHub Pages and Static Site Generators
 
-Templating -- separation of content from layout/styling etc.
-What to say about Jekyll? Hugo...
-Developing locally
+- You can use any SSG with GitHub Pages
+  - Once the pages are built (on your laptop or some other way) they are just static `.html` pages (and related resources), and can be uploaded to a GitHub Pages-enabled repository just like the files we've been working with
+
+<!-- .element class="fragment" -->
+
+- GitHub Pages has Jekyll built in
+  - This makes it **considerably** easier to work with
+
+<!-- .element class="fragment" -->
+
+---
+
+<!-- .slide: data-background-image="assets/jekyll.svg" -->
+<!-- .slide: data-background-size="100vmin" -->
+<!-- .slide: data-background-position="bottom" -->
+<!-- .slide: data-background-opacity="0.2" -->
+
+### Making a site with Jekyll (I)
+
+- Delete your `<gh-user>.github.io` repo (or rename it if you'd like to keep it around)
+  - <kbd>Settings</kbd> → <kbd>Delete this repository</kbd>
+
+<!-- .element class="fragment" -->
+
+- Create a new repository with the same name
+  - Go back to your profile page at `https://github.com/<gh-user>`, then <kbd>Repositories</kbd> → <kbd>New</kbd>
+
+<!-- .element class="fragment" -->
+
+- Create a new `index.md` file, with the contents
+
+<!-- .element class="fragment" -->
+
+```
+---
+title: Home
+---
+
+[Home](index.md)
+
+# Welcome to my personal website!
+```
+
+<!-- .element class="fragment" -->
+
+- Commit, wait for deploy, and check out your site
+
+<!-- .element class="fragment" -->
+
+---
+
+<!-- .slide: data-background-image="assets/jekyll.svg" -->
+<!-- .slide: data-background-size="100vmin" -->
+<!-- .slide: data-background-position="bottom" -->
+<!-- .slide: data-background-opacity="0.2" -->
+
+### Making a site with Jekyll (II)
+
+- Create a new file called `about.md`:
+
+```
+---
+title: About
+---
+
+[Home](index.md) | [About](about.md)
+
+# About me
+
+Something about me goes here.
+```
+
+- Update `index.md` to have the extra link `[About](about.md)` too
+
+---
+
+<!-- .slide: data-background-image="assets/jekyll.svg" -->
+<!-- .slide: data-background-size="100vmin" -->
+<!-- .slide: data-background-position="bottom" -->
+<!-- .slide: data-background-opacity="0.2" -->
+
+### Front-matter and Themes with Jekyll and GitHub Pages
+
+- Create a new file `_config.yml`:
+
+<!-- prettier-ignore -->
+```md
+title: <Your Name Here>
+description: Personal site for <Your Name>
+remote_theme: pages-themes/hacker@v0.2.0
+plugins:
+  - jekyll-remote-theme
+```
+
+- Commit, wait for deploy, and check out your site
+
+<!-- .element class="fragment" -->
+
+- See https://github.com/pages-themes/ for the list of built-in Jekyll themes
+
+<!-- .element class="fragment" -->
 
 ---
 
 ### Working with local files
 
+If you do a lot of this, or if you want to get more into using git and GitHub for more than just simple static site or two, at some point you're going to need to install git on your computer and get used to keeping your local repository in sync with the remote repository (on GitHub or perhaps elsewhere).
+
+- GitHub Desktop: https://desktop.github.com/
+- https://gitforwindows.org/
+
 ---
 
-### Further Resources
+### Further Resources (I)
 
 - HTML / CSS
 
+  - https://www.learn-html.org/
   - https://www.w3schools.com/
   - http://www.csszengarden.com/
 
-- GitHub Pages / Jekyll
+- Markdown
+  - https://daringfireball.net/projects/markdown/ -- The "original" markdown spec., circa 2004
+  - https://guides.github.com/features/mastering-markdown/
+  - https://www.markdownguide.org/
+
+---
+
+### Further Resources (II)
+
+- GitHub Pages
+
+  - https://pages.github.com/
+  - For built-in themes see https://pages.github.com/themes/ or https://github.com/pages-themes/
+
+- Jekyll
+  - https://jekyllrb.com/
+
+---
+
+### Further Resources (III)
+
+- End-to-End Tutorials for GitHub Pages and Jekyll
 
   - https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages
   - https://programminghistorian.org/en/lessons/collaborative-blog-with-jekyll-github
 
-- https://pages.github.com/
-
-- https://jayrobwilliams.com/posts/2020/06/academic-website/
+- `academicpages` is a well-known and fully-featured Jekyll theme for academics
+  - https://academicpages.github.io/
+  - https://jayrobwilliams.com/posts/2020/06/academic-website/
 
 ---
 
-### Thanks!
+# Thanks! ![CIDR](assets/cidr.420x140.png)
 
 Please fill out the evaluation form for this workshop at:
-https://evaluation.cidr.link/Websites_with_GitHub_Pages/ <!-- .element: target="signin" -->
+https://evaluations.cidr.link/Websites_with_GitHub_Pages/ <!-- .element: target="signin" -->
 
----
+<!-- .element: style="text-align:center" -->
