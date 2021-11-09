@@ -1,6 +1,6 @@
 # Personal & Professional Websites w/ GitHub Pages
 
-## ![CIDR](assets/cidr.400x209.png)
+## ![CIDR](assets/cidr.240x140.png)
 
 ## https://sul-cidr.github.io/gh-pages-2021/
 
