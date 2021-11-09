@@ -49,7 +49,7 @@ When you've submitted the sign-in form, please keep the browser tab open on the 
       <li>A Single-Page Résumé Site</li>
     </ul>    
   </li>
-  <li class="fragment">Static Site Generators, Markdown, and Templating</li>
+  <li class="fragment">Static Site Generators, Markdown, and Jekyll</li>
 </ul>
 
 ---
@@ -83,7 +83,7 @@ When you've submitted the sign-in form, please keep the browser tab open on the 
 - **Dynamic Websites**
 
   - A web application creates the resources (HTML) on-demand, when a user request is made
-  - Typically (though not always) involve a database server
+  - Typically (though not always) involves a database server
   - Can be updated in real time, while running
   - Examples include CMSs such as WordPress, Drupal, MediaWiki
 
@@ -91,10 +91,10 @@ When you've submitted the sign-in form, please keep the browser tab open on the 
 
 - **Static Sites**
 
-  - Resources are created in advance of user requests and are delivered to users exactly as stored
+  - Resources are created in advance of user requests and are delivered to users **exactly as stored**
   - Updates require that some or all of the pages are modified/replaced/recreated
   - No special server-side software required
-  - Resources can be created by a Static-Site Generator
+  - Resources can be created by a Static Site Generator
 
  <!-- .element class="fragment" -->
 
@@ -176,11 +176,15 @@ say something about widgets?
 ### Static Site Generators
 
 - The principle behind SSGs is to separate content and layout/styling ("themes")
-  - This has the major advantage of avoiding repetition
+  - This has the major advantage of avoiding repetition, and allows authors to focus on  
+    the content without distractions
 - Typically content is created in Markdown files
-- The SSG combines the content files with a template to create the static HTML  
-  (and CSS, JavaScript etc.) files which comprise the static site
+
+- The SSG combines the content files with a template
+  - This step create the static HTML (and CSS, JavaScript etc.) files which comprise the static site
 - Popular SSGs include Gatsby, Hugo, Eleventy, and Jekyll
+
+<!-- .element class="fragment" -->
 
 :::
 
@@ -396,7 +400,7 @@ Copy-and-paste this simplest possible HTML document over the top of the `index.h
 
 Let's create a more interesting example.
 
-- Open the example page and take a quick look  
+- Open the example page and take a quick look:  
   https://sul-cidr.github.io/gh-pages-2021/templates/one-file.html <!-- .element: target="one-file" -->
 
 <!-- .element class="fragment" -->
@@ -454,12 +458,14 @@ Let's create a more interesting example.
 ### GitHub Pages and Static Site Generators
 
 - You can use any SSG with GitHub Pages
-  - Once the pages are built (on your laptop or some other way) they are just static `.html` pages (and related resources), and can be uploaded to a GitHub Pages-enabled repository just like the files we've been working with
+  - Once the pages are built (on your laptop or some other way) they are just static `.html` pages  
+    (and related resources), and can be uploaded to a GitHub Pages-enabled repository just like  
+    the files we've been using so far.
 
 <!-- .element class="fragment" -->
 
 - GitHub Pages has Jekyll built in
-  - This makes it **considerably** easier to work with
+  - This makes it **considerably** easier to work with.
 
 <!-- .element class="fragment" -->
 
@@ -586,10 +592,14 @@ If you do a lot of this, or if you want to get more into using git and GitHub fo
 - GitHub Pages
 
   - https://pages.github.com/
-  - For built-in themes see https://pages.github.com/themes/ or https://github.com/pages-themes/
 
 - Jekyll
+
   - https://jekyllrb.com/
+
+- GitHub Pages-supported Jekyll Themes
+  - https://github.com/pages-themes/ -- officially supported themes
+  - https://jekyllthemes.io/github-pages-themes
 
 ---
 
